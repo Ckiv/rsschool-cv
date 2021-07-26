@@ -4,21 +4,24 @@
     <meta charset="UTF-8">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Condensed:wght@100&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/styles/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Condensed:wght@100;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/styles.css">
     <title>Title</title>
 </head>
 <body>
+<div class="page-wrapper">
 <section class="about-me">
     <div class="about-me-description">
         <h1>Alexandr Shashok</h1>
         <p class="description">The main goal is professional growth to become a real developer.</p>
-        <ul class="contacts">
+        <ul class="description-list contact">
             <li>Telephone: <a href="tel:+375292995416">+375 29 299 54 16</a></li>
             <li>e-mail: <a href="mailto:alexandrshahok@gmail.com">alexandrshahok@gmail.com</a></li>
         </ul>
     </div>
-    <img src="images/content/alexandr-shashok.jpg" alt="Alexandr Shashok">
+    <div class="photo-wrapper">
+        <img class="person-photo" src="images/content/alexandr-shashok.jpg" alt="Alexandr Shashok">
+    </div>
 </section>
 <article>
     <section class="experience">
@@ -62,8 +65,9 @@
     </section>
 </article>
 <footer>
-    <img src="images/logo-rs-school-js.svg" alt="logo rs school js">
-    <p>2021 <a href="https://github.com/Ckiv" target="_blank">Alexandr Shashok Github</a></p>
+    <a href="https://rs.school/js/"><img class="logo-rs" src="images/logo-rs-school-js.svg" alt="logo rs school js"></a>
+    <p>2021 Alexandr Shashok <img src="images/favicons/favicon-github.svg" alt="favicon github"><a href="https://github.com/Ckiv" target="_blank">Github</a></p>
 </footer>
+</div>
 </body>
 </html>
