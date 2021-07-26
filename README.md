@@ -1,2 +1,2 @@
-cv - https://Ckiv.github.io/rsschool-cv/cv
-cv html - https://Ckiv.github.io/rsschool-cv/index
+1. cv - https://Ckiv.github.io/rsschool-cv/cv
+1. cv html - https://Ckiv.github.io/rsschool-cv/
