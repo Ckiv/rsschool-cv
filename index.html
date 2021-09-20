@@ -7,14 +7,36 @@
     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Condensed:wght@100;400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/styles.css">
     <title>Alexandr Shashok CV</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.9/styles/default.min.css">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.9/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
 </head>
 <body>
 <div class="page-wrapper">
 <header class="about-me">
+    <nav class="menu">
+        <div class="menu_wrapper">
+            <ul class="menu-list">
+                <li class="menu-item"><a href="#contact">Contact</a></li>
+                <li class="menu-item"><a href="#experience">Experience</a></li>
+                <li class="menu-item"><a href="#example">Example code</a></li>
+                <li class="menu-item"><a href="#projects">Projects</a></li>
+                <li class="menu-item"><a href="#skills">Skills</a></li>
+                <li class="menu-item"><a href="#education">Education</a></li>
+                <li class="menu-item"><a href="#language">Languages</a></li>
+            </ul>
+            <span class="trigger">
+                    <i></i>
+                    <i></i>
+                    <i></i>
+            </span>
+        </div>
+    </nav>
     <div class="about-me-description">
-        <h1>Alexandr Shashok</h1>
-        <p class="description">The main goal is professional growth to become a real developer.</p>
-        <ul class="description-list contact">
+        <article class="description"><h1>Alexandr Shashok</h1>
+        The main goal is professional growth to become a real developer.</article>
+        <ul id="contact" class="description-list contact">
             <li>Telephone: <a href="tel:+375292995416">+375 29 299 54 16</a></li>
             <li>e-mail: <a href="mailto:alexandrshahok@gmail.com">alexandrshahok@gmail.com</a></li>
         </ul>
@@ -24,16 +46,43 @@
     </div>
 </header>
 <main>
-    <section class="experience">
-        <h4>Experience</h4>
+    <section  class="experience">
+        <h4 id="experience">Experience</h4>
         <div class="element">
             <p class="data">2018-2021</p>
             <p class="description">For three years worked at Polotsk State University as a software engineer.</p>
         </div>
+        <div class="element">
+            <h4 id="example">Example code</h4>
+            <pre><code class="js">
+                module.exports = function towelSort (matrix) {
+                    let sort = [];
+                    if(typeof matrix != "undefined" && matrix != null && matrix.length > 0) {
+                        matrix.map((data, i) => {
+                            if ((i + 1) % 2 !== 0) {
+                                sort = sort.concat(data)
+                            } else {
+                                let rev = data.reverse()
+                                sort = sort.concat(rev)
+                            }
+                        })
+                        return sort;
+                    }
+                    else {return sort}
+                }
+            </code></pre>
+        </div>
+        <div class="element">
+            <h4 id="projects">Projects</h4>
+            <p class="description">Data base graduates. Technologies: Node.js, Express.js, Mysql, HTML, CSS, Handlebars </p>
+            <a href="https://alumni.psu.by" target="_blank"><img src="images/content/graduate.jpg" alt="graduate" class="project-img"></a>
+            <p class="description">Castom video player. Technologies: HTML, js </p>
+            <a href="https://rolling-scopes-school.github.io/ckiv-JSFEPRESCHOOL/custom-video-player/" target="_blank"><img src="images/content/castom-video-player.jpg" alt="castom-video-player" class="project-img"></a>
+        </div>
     </section>
     <section class="skills">
         <div class="element">
-            <h4>Skills</h4>
+            <h6 id="skills">Skills</h6>
             <ul class="description-list">
                 <li>JS</li>
                 <li>Node.js</li>
@@ -46,28 +95,23 @@
             </ul>
         </div>
         <div class="element">
-            <h4>Education</h4>
+            <h4 id="education">Education</h4>
                 <p class="data">2012-2018</p>
                 <p class="description">Computers, systems and networks. Pogetlotsk state university</p>
         </div>
         <div class="element">
-            <h4>Language</h4>
+            <h4 id="language">Language</h4>
             <ul class="description-list">
                 <li>English - A1</li>
-            </ul>
-        </div>
-        <div class="element">
-            <h4>Projects</h4>
-            <ul class="description-list">
-                <li><a href="https://alumni.psu.by" target="_blank">Data base graduates</a></li>
             </ul>
         </div>
     </section>
 </main>
 <footer>
     <a href="https://rs.school/js/"><img class="logo-rs" src="images/logo-rs-school-js.svg" alt="logo rs school js"></a>
-    <p>2021 Alexandr Shashok <img src="images/favicons/favicon-github.svg" alt="favicon github"><a href="https://github.com/Ckiv" target="_blank">Github</a></p>
+        <h5>2021 Alexandr Shashok</h5> <span><img src="images/favicons/favicon-github.svg" alt="favicon github"><a href="https://github.com/Ckiv" target="_blank">Github</a></span>
 </footer>
 </div>
+<script src="scripts/script.js"></script>
 </body>
 </html>

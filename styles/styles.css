@@ -52,7 +52,9 @@ table {
     border-collapse: collapse;
     border-spacing: 0;
 }
-
+html {
+    scroll-behavior: smooth;
+}
 /* page styles */
 
 h1 {
@@ -105,9 +107,29 @@ h4 {
     color: #222222;
     margin-bottom: 15px;
 }
+h5 {
+    font-family: 'IBM Plex Sans Condensed', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 18px;
+    color: #222222;
+    margin-right: 10px;
+}
+h6 {
+    font-family: 'IBM Plex Sans Condensed', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 20px;
+    color: #222222;
+    margin-bottom: 15px;
+}
 
 .page-wrapper {
-    width: 900px;
+    display: flex;
+    flex-direction: column;
+    width: 45%;
     margin: 50px auto 20px auto;
 }
 
@@ -135,11 +157,12 @@ h4 {
 
 main {
     display: flex;
+    margin-bottom: 20px;
 }
 
 .logo-rs {
-    width: 20%;
-    margin-bottom: 30px;
+    width: 120px;
+    /* margin-bottom: 30px; */
 }
 
 .experience {
@@ -152,4 +175,96 @@ main {
 
 .photo-wrapper, .skills, .about-me-description, .experience {
     width: 50%;
+}
+.menu-list {
+    display: none;
+    font-family: 'IBM Plex Sans Condensed', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 16px;
+    margin-bottom: 10px;
+    color: #222222;
+}
+.menu-item {
+    margin-bottom: 10px;
+}
+footer {
+    display: flex;
+}
+footer a {
+    margin-right: 45px;
+}
+.project-img {
+    width: 100%;
+    margin-bottom: 10px;
+}
+.element .description {
+    margin-bottom: 20px;
+}
+@media screen and (max-width: 550px) {
+    .page-wrapper {
+        width: 95%;
+        margin: 0 auto;
+    }
+    .about-me {
+        flex-direction: column;
+    }
+    .photo-wrapper {
+        order: 1;
+        /* margin-top: 10px; */
+        margin: 10px auto;
+        width: 200px;
+    }
+    .about-me-description {
+        order: 2;
+    }
+    .show {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        width: 100%;
+        align-items: flex-start;
+        padding-left: 10px;
+        margin-top: 35px;
+    }
+    .trigger {
+        display: inline-block;
+        height: 35px;
+        width: 35px;
+        margin: 3px;
+        cursor: pointer;
+        /* margin-right: 10px; */
+    }
+    .trigger i {
+        display: block;
+        width: 30px;
+        height: 6px;
+        margin: 4px auto;
+        background: #222;
+    }
+    main {
+        flex-direction: column;
+        padding-left: 10px;
+    }
+    .menu {
+        /* display: flex; */
+        /* flex-direction: column; */
+        /* justify-content: flex-end; */
+    }
+    .menu_wrapper {
+        display: flex;
+        /* flex-direction: column; */
+        justify-content: flex-end;
+    }
+    .skills, .about-me-description, .experience {
+        width: 100%;
+    }
+    h1 {
+        text-align: center;
+    }
+    .description, .contact {
+        padding-left: 10px;
+    }
+
 }
