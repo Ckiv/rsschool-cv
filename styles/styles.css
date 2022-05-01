@@ -116,3 +116,14 @@ section {
 .skill-right-block {
     margin-right: 50px;
 }
+@media (max-width: 768px) {
+    .position-block {
+        flex-direction: column;
+    }
+    section {
+        width: 80vw;
+    }
+    .position-row {
+        flex-direction: row;
+    }
+}
