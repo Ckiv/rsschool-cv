@@ -13,119 +13,74 @@
     <script>hljs.initHighlightingOnLoad();</script>
 </head>
 <body>
-<div class="page-wrapper">
-<header class="about-me">
-    <nav class="menu">
-        <div class="menu_wrapper">
-            <ul class="menu-list">
-                <li class="menu-item"><a href="#contact">Контакты</a></li>
-                <li class="menu-item"><a href="#experience">Опыт</a></li>
-                <li class="menu-item"><a href="#example">Пример кода</a></li>
-                <li class="menu-item"><a href="#projects">Проекты</a></li>
-                <li class="menu-item"><a href="#skills">Навыки</a></li>
-                <li class="menu-item"><a href="#education">Образование</a></li>
-                <li class="menu-item"><a href="#language">Языки</a></li>
-            </ul>
-            <span class="trigger">
-                    <i></i>
-                    <i></i>
-                    <i></i>
-            </span>
-        </div>
-    </nav>
-    <div class="about-me-description">
-        <article class="description"><h1>Александр Шашок</h1>
-        Нахожусь в поиске работы. Есть опыт в front-end и backend разработке.</article>
-        <ul id="contact" class="description-list contact">
-            <li>Телефон: <a href="tel:+375292995416">+375 29 299 54 16</a></li>
-            <li>e-mail: <a href="mailto:alexandrshahok@gmail.com">alexandrshahok@gmail.com</a></li>
-        </ul>
+<section class="name">
+    <h1 class="title-page">Александр Шашок</h1>
+    <p class="text text-position">+375 29 299 54 16  alexandrshahok@gmail.com  https://github.com/Ckiv</p>
+</section>
+<section class="about-me position-block">
+    <div class="inner-title">
+        <p class="title-section">Обо мне</p>
     </div>
-    <div class="photo-wrapper">
-        <img class="person-photo" src="images/content/alexandr-shashok.jpg" alt="Alexandr Shashok">
+    <div class="inner-description">
+        <p class="text">Нахожусь в поиске работы. Есть опыт в front-end и backend разработке.</p>
     </div>
-</header>
-<main>
-    <section  class="experience">
-        <h4 id="experience">Опыт</h4>
-        <div class="element">
-            <p class="data">2018-2021</p>
-            <p class="description">Администрирование сайта на CMS Joomla. Верстка шаблона, создание и наполнение контентом.</p>
+</section>
+<section class="education position-block">
+    <div class="inner-title">
+        <p class="title-section">Образование</p>
+        <p class="text">2012 - 2018</p>
+    </div>
+    <div class="inner-description">
+        <div class="right-block">
+            <p class="text-bold">Полоцкий государственный университет</p>
+            <p class="text">Вычислительные машины, системы и сети</p>
         </div>
-        <div class="element">
-            <h4 id="example">Пример кода</h4>
-            <pre><code class="js">
-                module.exports = function towelSort (matrix) {
-                    let sort = [];
-                    if(typeof matrix != "undefined" && matrix != null && matrix.length > 0) {
-                        matrix.map((data, i) => {
-                            if ((i + 1) % 2 !== 0) {
-                                sort = sort.concat(data)
-                            } else {
-                                let rev = data.reverse()
-                                sort = sort.concat(rev)
-                            }
-                        })
-                        return sort;
-                    }
-                    else {return sort}
-                }
-            </code></pre>
+    </div>
+</section>
+<section class="experience position-block">
+    <div class="inner-title">
+        <p class="title-section">Опыт</p>
+        <p class="text">2018 - 2021</p>
+    </div>
+    <div class="inner-description">
+        <div class="right-block">
+            <p class="text-bold">Инженер-программист в Полоцком государственном университете</p>
+            <p class="text">Администрирование сайта на CMS Joomla. Верстка шаблона, создание и наполнение контентом.</p>
         </div>
-        <div class="element">
-            <h4 id="projects">Проекты</h4>
-            <p class="description">Веб-приложение содержащее профили выпускников ПГУ. Реализован следующий функционал:</p>
-            <ul class="project-list">
-                <li>кабинет пользователя</li>
-                <li>редактирование данных профиля пользователем<li>
-                <li>загрузка фотографий<li>
-                <li>авторизация<li>
-                <li>поиск в базе данных по различным критериям<li>
-                <li>кабинет администратора<li>
-                <li>создание/удаление/редактирование записей базы данных<li>
-            </ul>
-            <p class="description">Технологии: Node.js, Express.js, Mysql, HTML5, CSS3, Handlebars </p>
-            <a href="https://alumni.psu.by" target="_blank"><img src="images/content/graduate.jpg" alt="graduate" class="project-img"></a>
-            <p class="description">Кастомный видео плеер. Технологии: HTML, js </p>
-            <a href="https://rolling-scopes-school.github.io/ckiv-JSFEPRESCHOOL/custom-video-player/" target="_blank"><img src="images/content/castom-video-player.jpg" alt="castom-video-player" class="project-img"></a>
+    </div>
+</section>
+<section class="project position-block">
+    <div class="inner-title">
+        <p class="title-section">Проекты</p>
+        <p class="text">2019 - 2020</p>
+    </div>
+    <div class="inner-description">
+        <div class="right-block">
+            <p class="text-bold">Веб-приложение профилей выпускников ПГУ</p>
+            <p class="text">Реализован следующий функционал: кабинет пользователя, редактирование данных профиля пользователем, загрузка фотографий, авторизация, поиск в базе данных по различным критериям, кабинет администратора, создание/удаление/редактирование записей базы данных.</br>
+                Технологии: Node.js, Express.js, Mysql, HTML5, CSS3, Handlebars</p>
         </div>
-    </section>
-    <section class="skills">
-        <div class="element">
-            <h6 id="skills">Навыки</h6>
-            <ul class="description-list">
-                <li>HTML5</li>
-                <li>CSS3</li>
-                <li>JS</li>
-                <li>Node.js</li>
-                <li>Express.js</li>
-                <li>Mysql</li>
-                <li>HandleBars</li>
-                <li>BEM</li>
-                <li>Sass</li>
-                <li>Git</li>
-                <li>Joomla</li>
-                <li>Chrome DevTools</li>
-            </ul>
+    </div>
+</section>
+<section class="skill position-block">
+    <div class="inner-title"><p class="title-section">Навыки</p></div>
+    <div class="inner-description position-block">
+        <div class="skill-right-block">
+            <p class="text-bold">HTML5/CSS3</p>
+            <p class="text-bold">JS</p>
+            <p class="text-bold">Node.js</p>
+            <p class="text-bold">Express.js</p>
+            <p class="text-bold">Mysql</p>
+            <p class="text-bold">HandleBars</p>
         </div>
-        <div class="element">
-            <h4 id="education">Образование</h4>
-                <p class="data">2012-2018</p>
-                <p class="description">Computers, systems and networks. Polotsk state university</p>
+        <div class="skill-left-block">
+            <p class="text-bold">BEM</p>
+            <p class="text-bold">Sass</p>
+            <p class="text-bold">Git</p>
+            <p class="text-bold">Joomla</p>
+            <p class="text-bold">English - A2</p>
         </div>
-        <div class="element">
-            <h4 id="language">Языки</h4>
-            <ul class="description-list">
-                <li>English - A2</li>
-            </ul>
-        </div>
-    </section>
-</main>
-<footer>
-    <a href="https://rs.school/js/"><img class="logo-rs" src="images/logo-rs-school-js.svg" alt="logo rs school js"></a>
-        <h5>2021 Alexandr Shashok</h5> <span><img src="images/favicons/favicon-github.svg" alt="favicon github"><a href="https://github.com/Ckiv" target="_blank">Github</a></span>
-</footer>
-</div>
-<script src="scripts/script.js"></script>
+    </div>
+</section>
 </body>
 </html>
